@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cybrany | Cybersecurity Training</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style/style.css" />
+</head>
+
+<body>
+  <canvas id="matrix-canvas" aria-hidden="true"></canvas>
+
+  <header>
+    <div class="container">
+      <div class="nav" id="siteNav">
+        <a href="index.html" class="brand">
+          <img class="img" src="cybarany_no_background.png" alt="Cybrany Logo">
+        </a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primaryNav" aria-label="open menu">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="nav-links" id="primaryNav">
+          <a href="courses.html">Courses</a>
+          <a href="ex.html">Experience</a>
+          <a href="#" onclick="enroll(event,'CTA')" class="btn-outline">Get Started</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero" id="top">
+    <div class="container hero-inner">
+      <div class="fade-in" style="--delay: 0ms">
+        <span class="badge">
+          <span class="dot"></span>
+          Cybersecurity Training Expert
+        </span>
+      </div>
+
+      <h1 class="font-orbitron fade-in" style="--delay: 100ms">
+        Secure Your Future with
+        <span class="block gradient-text cyber-glow-text" style="display:block;">Cybrany</span>
+      </h1>
+
+      <p class="muted fade-in" style="--delay: 200ms">
+        Transform your career with industry-leading cybersecurity training.
+        From ethical hacking to threat intelligence, master the skills that matter.
+      </p>
+
+      <div class="hero-actions fade-in" style="--delay: 300ms">
+        <a class="btn" href="courses.html">
+          Explore Courses
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m9 18 6-6-6-6"></path>
+          </svg>
+        </a>
+        <a class="btn-outline" href="ex.html">View My Experience</a>
+      </div>
+    </div>
+    <div class="hero-fade-bottom"></div>
+  </section>
+
+  <section class="py-20">
+    <div class="container">
+      <div class="flex-center-grid" style="--grid-min-item-size: 200px;">
+        <div class="cyber-card stat fade-in" style="--delay: 0ms">
+          <i data-lucide="users" class="stat-icon"></i>
+          <div class="stat-value">
+            <span data-counter data-end="2500" data-suffix="+">0</span>
+          </div>
+          <div class="stat-label">Students Trained</div>
+        </div>
+
+        <div class="cyber-card stat fade-in" style="--delay: 100ms">
+          <i data-lucide="award" class="stat-icon"></i>
+          <div class="stat-value">
+            <span data-counter data-end="15" data-suffix="+">0</span>
+          </div>
+          <div class="stat-label">Certifications</div>
+        </div>
+
+        <div class="cyber-card stat fade-in" style="--delay: 200ms">
+          <i data-lucide="book-open" class="stat-icon"></i>
+          <div class="stat-value">
+            <span data-counter data-end="8">0</span>
+          </div>
+          <div class="stat-label">Courses</div>
+        </div>
+
+        <div class="cyber-card stat fade-in" style="--delay: 300ms">
+          <i data-lucide="shield" class="stat-icon"></i>
+          <div class="stat-value">
+            <span data-counter data-end="10" data-suffix="+">0</span>
+          </div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20" id="courses">
+    <div class="container">
+      <div class="section-title fade-in">
+        <h2 class="font-orbitron">
+          Featured <span class="gradient-text">Courses</span>
+        </h2>
+        <p class="muted">
+          Start your cybersecurity journey with our most popular training programs
+        </p>
+      </div>
+
+      <div class="main-grid" id="coursesGrid">
+        </div>
+
+      <div class="center mt-10 fade-in">
+        <a class="btn-outline" href="courses.html">
+          View All Courses
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m9 18 6-6-6-6"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20" id="experience-teaser">
+    <div class="container">
+      <div class="cyber-card cta fade-in" style="text-align: left; display: flex; flex-direction: column; md:flex-row; gap: 2rem; align-items: center;">
+        
+        <div class="cta-inner" style="text-align: center;">
+          <h2 class="font-orbitron mb-4">Meet Your Instructor</h2>
+          <p class="text-muted-foreground mb-6 max-w-2xl mx-auto">
+            With over a decade of hands-on experience in penetration testing, threat analysis, and corporate training, 
+            I help students bridge the gap between theory and real-world application.
+          </p>
+          
+          <div class="flex gap-2 justify-center" style="flex-wrap: wrap;">
+             <div class="pill">CEH Certified</div>
+             <div class="pill">CISSP</div>
+             <div class="pill">OSCP</div>
+          </div>
+
+          <div class="mt-10">
+            <a class="btn" href="ex.html">
+              View Full Profile & Skills
+              <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m9 18 6-6-6-6"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20" id="start">
+    <div class="container">
+      <div class="cyber-card cta fade-in">
+        <div class="cta-inner">
+          <h2 class="font-orbitron">Ready to Start Your Journey?</h2>
+          <p>Join thousands of professionals who have transformed their careers.</p>
+          <a class="btn" href="courses.html">
+            Get Started Today
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m9 18 6-6-6-6"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container text-center">
+      <div>© <span id="year"></span> Cybrany. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="Js/main.js"></script>
+</body>
+</html>

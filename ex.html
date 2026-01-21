@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional CV</title>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+  <canvas id="matrix-canvas" aria-hidden="true"></canvas>
+
+<!-- Header -->
+<header>
+  <div class="container">
+    <div class="nav fade-in" id="siteNav">
+      <a href="index.html" class="brand">
+        <img src="cybarany_no_background.png" alt="Logo" class="img">
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="primaryNav">
+        <a href="courses.html">Courses</a>
+        <a href="ex.html">Experience</a>
+        <a  href="#" onclick="enroll(event,'CTA')" class="btn-outline">Get Started</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<!-- Main Content -->
+<main>
+  <!-- Hero / Intro Section -->
+  <section class="py-20 text-center">
+    <div class="container">
+      <div class="section-title fade-in text-center">
+      <h2 class="font-orbitron fade-in in-view">
+        Professional <span class="block gradient-text cyber-glow-text">Profile</span>
+      </h2>
+      <p class="text-muted-foreground font-rajdhani text-xl max-w-2xl mx-auto mb-6">
+        A decade of experience in cybersecurity, training, and protecting digital assets
+      </p>
+
+      <a class="btn" href="assets/cv/Mohammed_Mazen_CV.pdf"
+  download>
+        <i data-lucide="download" class="w-5 h-5"></i>
+        Download CV
+      </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Profile & Skills Section -->
+  <section class=" container dashboard-layout">
+    <!-- Profile Card -->
+    <div class="cyber-card fade-in items-center text-center">
+      <div class=" p-6 ">
+        <div>
+          <img class="mhmd-pic animate-glow-pulse" src="assets/pics/Mohammed_Pic.jpeg" alt="">
+        </div>
+        <h2 class="font-orbitron text-2xl font-bold text-foreground mb-2">Mohammed Mazen</h2>
+        <p class="text-primary font-rajdhani text-lg mb-4">Cybersecurity Expert & Trainer</p>
+        <p class="text-muted-foreground font-rajdhani">
+          Passionate about cybersecurity education and helping professionals build the skills 
+          they need to protect the digital world.
+        </p>
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <div class=" fade-in">
+      <div class="cyber-card text-center p-6">
+        <h3 class="font-orbitron text-xl font-bold mb-4 flex  gap-2">
+          <i data-lucide="code" class="w-5 h-5 text-primary"></i>
+          Technical Skills
+        </h3>
+        <div class="space-y-6" id="skillsGrid">
+          <!-- JS will populate skills here -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Timeline -->
+  <section class="container py-12 fade-in" id="experience">
+    <div class="section-title fade-in text-center">
+      <h2 class="font-orbitron">
+        Professional <span class="gradient-text">Experience</span>
+      </h2>
+      <p class="muted">Industry recognized validation of expertise</p>
+    </div>
+    <div class="relative fade-in" id="experienceTimeline">
+      <!-- JS will populate experience cards -->
+      <div class="absolute left-0 md:left-1/2 top-0 bottom-0 w-px bg-primary/30 transform md:-translate-x-1/2"></div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section class="py-20" id="certifications">
+  <div class="container">
+    <div class="section-title fade-in text-center">
+      <h2 class="font-orbitron">
+        Professional <span class="gradient-text">Certifications</span>
+      </h2>
+      <p class="muted">Industry recognized validation of expertise</p>
+    </div>
+
+    <div class="main-grid fade-in " id="certGrid">
+      </div>
+
+    <div class="center mt-10 fade-in">
+       </div>
+  </div>
+</section>
+
+
+  <script src="Js/main.js"></script>
+</body>
+</html>
