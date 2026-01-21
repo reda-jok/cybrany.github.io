@@ -670,10 +670,11 @@ if (document.getElementById("certGrid")) {
 
 function enroll(e,course) {
   e.preventDefault(); // 🚨 THIS IS IMPORTANT
+  const phoneNumber = "9647708828800";
   if (course === "CTA") {
     const msg = encodeURIComponent(`Hello, I want to get started with Cybersecurity courses`);
-    window.open(`https://wa.me/009647708828800?text=${msg}`, "_blank");
+    window.open(`https://wa.me/${phoneNumber}?text=${msg}`, "_blank");
   } else {
   const msg = encodeURIComponent(`Hello, I want to enroll in the ${course} course`);
-  window.open(`https://wa.me/009647708828800?text=${msg}`, "_blank");
+  window.open(`https://wa.me/${phoneNumber}?text=${msg}`, "_blank");
 }; };
